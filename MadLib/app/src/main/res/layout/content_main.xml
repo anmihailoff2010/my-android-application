@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2196F3"
+    android:gravity="center"
+    tools:context="com.brysonpayne.ch4_challenge3_madlibs.MainActivity">
+
+
+    <TextView
+        android:id="@+id/lblFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblSmallContainer"
+        android:layout_alignStart="@+id/lblSmallContainer"
+        android:layout_alignLeft="@+id/lblSmallContainer"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/artifika"
+        android:text="Enter a food:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="266dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:fontFamily="@font/croissant_one"
+        android:gravity="center"
+        android:text="Anton MadLibs App"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/lblBigAnimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginStart="33dp"
+        android:layout_marginLeft="33dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/artifika"
+        android:text="Enter a big animal:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    <TextView
+        android:id="@+id/lblPastTenseVerb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblBigAnimal"
+        android:layout_alignStart="@+id/lblBigAnimal"
+        android:layout_alignLeft="@+id/lblBigAnimal"
+        android:layout_marginTop="29dp"
+        android:fontFamily="@font/artifika"
+        android:text="Enter a past-tense verb:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    <TextView
+        android:id="@+id/lblSmallContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblPastTenseVerb"
+        android:layout_alignStart="@+id/lblPastTenseVerb"
+        android:layout_alignLeft="@+id/lblPastTenseVerb"
+        android:layout_marginTop="31dp"
+        android:fontFamily="@font/artifika"
+        android:text="Enter a small container:"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2" />
+
+    <EditText
+        android:id="@+id/txtBigAnimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lblBigAnimal"
+        android:layout_alignBottom="@+id/lblBigAnimal"
+        android:layout_marginStart="11dp"
+        android:layout_marginLeft="11dp"
+        android:layout_toRightOf="@+id/lblBigAnimal"
+        android:ems="10"
+        android:gravity="center|left"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lblFood"
+        android:layout_alignBottom="@+id/lblFood"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toEndOf="@+id/lblFood"
+        android:layout_toRightOf="@+id/lblFood"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtSmallContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lblSmallContainer"
+        android:layout_alignStart="@+id/txtPastTenseVerb"
+        android:layout_alignLeft="@+id/txtPastTenseVerb"
+        android:layout_alignBottom="@+id/lblSmallContainer"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/txtPastTenseVerb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lblPastTenseVerb"
+        android:layout_alignBottom="@+id/lblPastTenseVerb"
+        android:layout_marginStart="12dp"
+        android:layout_marginLeft="12dp"
+        android:layout_toEndOf="@+id/lblPastTenseVerb"
+        android:layout_toRightOf="@+id/lblPastTenseVerb"
+        android:ems="10"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtFood"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:fontFamily="@font/bowlby_one_sc"
+        android:text="Make MadLib" />
+
+    <EditText
+        android:id="@+id/txtOutput"
+        android:layout_width="match_parent"
+        android:layout_height="237dp"
+        android:layout_below="@+id/button"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="13dp"
+        android:background="#4CAF50"
+        android:ems="10"
+        android:fontFamily="@font/bad_script"
+        android:inputType="textMultiLine" />
+
+</RelativeLayout>
